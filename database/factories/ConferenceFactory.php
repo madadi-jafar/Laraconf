@@ -28,7 +28,7 @@ class ConferenceFactory extends Factory
             'end_date' => fake()->date(),
             'status' => fake()->word(),
             'region' => fake()->word(),
-            'venue_id' => null,
+            'venue_id' => Venue::factory(),
         ];
     }
 }
